@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap');
+
+
+$dark: #000;
+$light: azure;
+
+:root{
+	// colors
+	//--primary-color: #ffff
+	// typography
+  //--fs-1: 1.563rem;
+}
+
+
+*, *::before, *::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+   -ms-scroll-chaining: none;//prevents the parent elements from scrolling when the user scrolls on a child element
+    overscroll-behavior: contain;//preventing the user from scrolling past the edges of element
+}
+body {
+    color: $light;
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: $dark;
+}
+button{ font:inherit; }
+a { text-decoration: none; }
+li { list-style: none; }
+img, ion-icon, button, a { display: block; }
+span { display: inline-block; }
+
+.wrapper{
+  width: 60%;
+  margin: 10% auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  .selectOption{
+    border: 1px solid $light;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    button{
+      text-transform: uppercase;
+      font-size: 0.9rem;
+      padding: 2px;
+      font-weight: bold;
+    }
+  }
+}
