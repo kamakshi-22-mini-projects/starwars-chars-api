@@ -5,14 +5,6 @@ function App() {
   const [starWarsData, setStarWarsData] = React.useState({})
     const [count, setCount] = React.useState(1)
     
-    /**
-     * Challenge: Combine `count` with the request URL
-     * so pressing the "Get Next Character" button will
-     * get a new character from the Star Wars API.
-     * Remember: don't forget to consider the dependencies
-     * array!
-     */
-    
     React.useEffect(function() {
         console.log("Effect ran")
         fetch(`https://swapi.dev/api/people/${count}`)
